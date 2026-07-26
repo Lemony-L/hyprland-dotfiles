@@ -97,8 +97,8 @@ yay -S mpvpaper
 ### 2. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+git clone https://github.com/Lemony-L/hyprland-dotfiles.git
+cd hyprland-dotfiles
 ```
 
 ### 3. Copy configs to `~/.config`
@@ -128,7 +128,7 @@ hyprctl reload
 | Keybind | Action |
 |---------|--------|
 | `SUPER + Return` | Open terminal (Kitty) |
-| `SUPER + D` | Open app launcher (Wofi) |
+| `SUPER + R` | Open app launcher (Wofi) |
 | `SUPER + Q` | Close active window |
 | `SUPER + [1-9]` | Switch workspace |
 
@@ -160,6 +160,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-*If you like this rice, consider leaving a ⭐ on the repo!*
+
 
 </div>
