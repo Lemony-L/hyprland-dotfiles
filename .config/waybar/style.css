@@ -1,0 +1,83 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces, #pulseaudio, #network, #cpu, #memory, #disk, #battery, #clock, #custom-gpu {
+    background: rgba(26, 27, 38, 0.5);
+    margin: 5px;
+    padding: 0 10px;
+    border-radius: 16px;
+}
+
+
+#workspaces {
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    border-radius: 16px;
+    color: #9399b2;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    color: #9e62e8;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+    background-color: #cba6f7;
+    color: #1e1e2e;
+    border-radius: 16px;
+}
+
+#pulseaudio, #network, #cpu, #memory, #disk, #battery, #clock, #custom-gpu {
+    padding: 0 10px;
+    margin: 5px 5px 5px 5px;
+    color: #cdd6f4;
+    border-radius: 16px;
+    background: #18181d;
+}
+
+#clock {
+    font-family: "JetBrainsMono Nerd Font";
+    background-color: #18181d;
+    color: #ffffff;
+}
+
+#pulseaudio {
+    color: #ffffff;
+}
+
+#network {
+    color: #ffffff;
+}
+
+#cpu {
+    color: #ffffff;
+}
+
+#memory {
+    color: #ffffff;
+}
+
+#custom-gpu {
+    color: #ffffff;
+}
+
+#battery {
+    color: #ffffff;
+}
+
+
+

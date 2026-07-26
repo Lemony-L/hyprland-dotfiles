@@ -1,0 +1,70 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "custom/gpu", "battery"],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "on-click": "activate"
+    },
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": " {essid} ({signalStrength}%) @ {bandwidthDownBytes}",
+        "format-ethernet": " {ifname} @ {bandwidthDownBytes}",
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "on-click": "nm-connection-editor"
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true,
+        "on-click": "kitty -e btop"
+    },
+    "memory": {
+        "format": " {used:0.1f}G/{total:0.1f}G",
+        "on-click": "kitty -e btop"
+    },
+    "custom/gpu": {
+        "exec": "~/.config/waybar/gpu.sh",
+        "format": "GPU: {}%",
+        "return-type": "json",
+        "interval": 1,
+        "tooltip": true,
+        "on-click": "kitty -e btop"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""],
+        "on-click": "kitty -e btop"
+    }
+}
+
