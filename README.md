@@ -9,7 +9,6 @@
 ![Kitty](https://img.shields.io/badge/Kitty-000000?style=for-the-badge&logo=gnu-bash&logoColor=orange)
 ![Wofi](https://img.shields.io/badge/Wofi-4285F4?style=for-the-badge)
 ![Made with Arch](https://img.shields.io/badge/Made%20with-Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 
 </div>
 
